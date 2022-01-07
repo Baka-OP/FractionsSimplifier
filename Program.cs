@@ -13,7 +13,7 @@ class Program {
     Console.ReadLine();
   }
   //Simplify, takes in an int array, returns simplified thru console :)
-  public static void Simplify(int[] numbers)
+  public static int Simplify(int[] numbers)
   {
   	int x = numbers[0];
   	int y = numbers[1];
@@ -25,7 +25,7 @@ class Program {
    }  
     int finalx = x/gcd;
     int finaly = y/gcd;    
-    Console.WriteLine(finalx.ToString() + "/" + finaly.ToString());
+    return(finalx.ToString() + "/" + finaly.ToString());
   }
 
 
